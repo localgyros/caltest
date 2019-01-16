@@ -29,7 +29,7 @@
 
 @section('script')
     <script>
-        window.g_eventsList = JSON.parse({{ $events }})
+        window.g_eventsList = {!! $events !!}
     </script>
     <script src="{{ mix('js/index.js') }}"></script>
     {{--{!! $calendar->script() !!}--}}

@@ -5,10 +5,10 @@ import 'fullcalendar/dist/fullcalendar.js';
 
 class App extends Component {
 
-  componentDidMount(props) {
-    console.log('props: ', this.props)
+  componentDidMount() {
     $('#calendar').fullCalendar({events: this.props.events})
   }
+  
   render() {
     return (
       <div className="App">
