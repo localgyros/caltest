@@ -4,9 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
-require('moment');
-require('fullcalendar');
+// require('./bootstrap');
+// require('moment');
+// require('fullcalendar');
 
 // window.Vue = require('vue');
 
