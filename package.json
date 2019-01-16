@@ -20,7 +20,7 @@
         "popper.js": "^1.12"
     },
     "dependencies": {
-        "fullcalendar": "^3.9.0",
+        "fullcalendar": "^3.10.0",
         "moment": "^2.22.2",
         "react": "^16.7.0",
         "react-dom": "^16.7.0"

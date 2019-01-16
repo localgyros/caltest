@@ -18,7 +18,6 @@
                     <div class="panel-heading">Full Calendar Example</div>
 
                     <div class="panel-body">
-                        MOUNT ME!!! <br/>
                         <div id="root"></div>
                         {{ $events }}
                     </div>
@@ -29,6 +28,9 @@
 @endsection
 
 @section('script')
-    {{--<script src="{{ mix('js/index.js') }}"></script>--}}
+    <script>
+        window.g_eventsList = JSON.parse({{ $events }})
+    </script>
+    <script src="{{ mix('js/index.js') }}"></script>
     {{--{!! $calendar->script() !!}--}}
 @endsection
