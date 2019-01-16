@@ -25,6 +25,7 @@ composer install
 This will take a while! When finished, run
 
 ```
+php artisan key:generate
 php artisan migrate --seed
 ```
 
