@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('events', 'EventController@index');
+
+Route::get('react', 'ReactEventController@index');
