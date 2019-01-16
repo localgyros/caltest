@@ -11,7 +11,7 @@ class ReactEventController extends Controller
 {
     public function index()
     {
-        $events = CalendarEvent::all();
+        $events = CalendarEvent::all()->toJson();
         // dd($events);
         // $calendar = Calendar::addEvents($events)->setOptions(['themeSystem' => 'bootstrap4', 'timezone' => 'local']);
         return view('reactcalendar', compact('events'));
