@@ -8,6 +8,7 @@ services:
       # NB: the default for PHP_OPCACHE_VALIDATE_TIMESTAMPS is 0, which may be what you
       # want for production, but for dev you certainly want file changes to be detected, thus set to 1
       PHP_OPCACHE_VALIDATE_TIMESTAMPS: 1
+      HOME: "/code"
     ports:
       - 8000:8000
     volumes:
